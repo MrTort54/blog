@@ -5,12 +5,14 @@ const path = require('path');
 const PORT = 3000;
 const app = express();
 
+require('dotenv').config();
+
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.json);
 
 mongoose
     .connect(
-        'mongodb+srv://ohnycht:CLa6PbJ5Fg1p0d2B@cluster0.f5xp95z.mongodb.net/'
+        `mongodb+srv://${process.env.USERNAME}:${process.env.PASSWORD}@cluster0.f5xp95z.mongodb.net/`
     )
     .then(() => console.log('connected'));
 
