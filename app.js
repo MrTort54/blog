@@ -12,7 +12,7 @@ app.use(express.json);
 
 mongoose
     .connect(
-        `mongodb+srv://${process.env.USERNAME}:${process.env.PASSWORD}@cluster0.f5xp95z.mongodb.net/`
+        'mongodb+srv://ohnycht:CLa6PbJ5Fg1p0d2B@cluster0.f5xp95z.mongodb.net/'
     )
     .then(() => console.log('connected'));
 

@@ -20,8 +20,8 @@ header {
 }
 
 .popUpCreate {
-    width: 200px;
-    height: 300px;
+    width: 300px;
+    height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,6 +30,21 @@ header {
     border-radius: 20px;
     border: 1px solid #333;
     position: absolute;
-    top: 0px;
+    bottom: 10px;
     left: 10px;
+    background-color: #fff;
+}
+
+.popUpCreate > button {
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: rgb(205, 255, 238);
+    border: none;
+}
+
+.popUpCreate > input {
+    width: 80%;
+    height: 20px;
+    padding-left: 10px;
 }
